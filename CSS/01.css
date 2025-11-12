@@ -71,7 +71,7 @@ table {
     position: relative;
     overflow: hidden;
     flex: 1; 
-
+}
 .nav-menu a.active {
     background: #ff9800;
     color: white;
