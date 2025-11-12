@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel = "stylesheet" href="CSS/01.css"
+    <meta charset="UTF-8">
+    <title>Оформить заказ</title>
+</head>
+
+<body>
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li><a href="../first/index.html" target="_self"><b>Главная страница</b></a></li>
+            <li><a href="https://flowwow.com/blog/kak-ukhazhivat-za-kaktusom/" target="_blank"><b>Полезные советы</b></a></li>
+            <li><a href="../first/order.html" target="_self" class="active"><b>Оформить заказ</b></a></li>
+            <li><a href="../first/cactus.html" target="_self"><b>Уход за кактусом</b></a></li>
+            <li><a href="../first/assortment.html" target="_self"><b>Ассортимент</b></a></li>
+            <li><a href="../first/passport.html" target="_self"><b>Паспорт и задача</b></a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=517f351a8c74a73dfc6199c0896f6c6152ee88be-10129407-images-thumbs&n=13" height="15px" alt="Википедия">
+            </a></li>
+        </ul>
+    </nav>
+    <h3 align="center" id="title1">Зарегистрироваться на сайте и оформить заказ </h3>
+
+    
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        
+        <p> <input type="hidden" name="q" value="search"></p>
+        <p>Имя: <input type="text" name="first_name" value="Иван"></p>
+        <p>Фамилия: <input type="text" name="last_name" size="20" value="Иванов"></p>
+        <p>Возраст: <input type="number" name="age" size="20" value="20"></p>
+        
+        <p>Опыт и знания об уходе за растениями:</p>
+        <p>
+            <input type="checkbox" name="experience" value="10" checked> Нет опыта<br>
+            <input type="checkbox" name="experience" value="20"> Мало знаю об уходе за другими растениями<br>
+            <input type="checkbox" name="experience" value="30"> Много знаю об уходе за другими растениями<br>
+            <input type="checkbox" name="experience" value="40"> Мало знаю об уходе за кактусами<br>
+            <input type="checkbox" name="experience" value="50"> Много знаю об уходе за кактусами<br>
+            <input type="checkbox" name="experience" value="60"> Есть много других растений дома<br>
+            <input type="checkbox" name="experience" value="70"> Есть много кактусов дома
+        </p>
+
+        <p>Номер телефона: <input type="tel" name="phone" size="20" value="89671763171"></p>
+        <p>Email: <input type="email" name="email" size="20" placeholder="введите email"></p>
+        <p>Придумайте пароль: <input type="password" name="password" size="9" value="123"></p>
+        
+        <p>Выберите кактус
+            <select name="types">
+                <option value="Нотокактус">Нотокактус</option>
+                <option value="Церус">Цереус</option>
+                <option value="Рипсалис">Рипсалис</option>
+                <option value="Астрофитум">Астрофитум</option>
+                <option value="Клейстокактус">Клейстокактус</option>
+            </select>
+        </p>
+
+        <p>Город доставки:
+            <input type="radio" name="place" value="Moscow"> Москва
+            <input type="radio" name="place" value="Nizhny" checked> Нижний Новгород
+            <input type="radio" name="place" value="CPB"> Санкт-Петербург
+            <input type="radio" name="place" value="Vladivostok"> Владивосток
+            <input type="radio" name="place" value="Irkutsk"> Иркутск
+        </p>
+
+        <p>Улица: <input type="text" name="street" size="20" value="Центральная"></p>
+        <p>Номер дома: <input type="number" name="home_number" size="20" value="5"></p>
+        <p>Номер квартиры: <input type="number" name="apart_number" size="20" value="25"></p>
+        
+        <p>Время доставки
+            <select name="time">
+                <option value="Первая половина дня">Первая половина дня</option>
+                <option value="Вторая половина дня">Вторая половина дня</option>
+            </select>
+        </p>
+
+        <p>Дополнительная информация:<br>
+            <textarea cols="80" rows="4" name="textarea">Для заметок</textarea>
+        </p>
+
+        <p>Дата оформления заказа: <input type="date" name="user_date" value="2025-11-12"></p>
+
+        <!-- Все нижерасположенные фрагменты перемещать нельзя, редактировать можно -->
+        <p>Название файла с подтверждением оплаты: 
+            <input type="text" name="000_file_name" value="оплата.screenshot.jpg" size="30">
+        </p>
+        
+        <p>Тип записи в файл:
+            <select name="010_mode">
+                <option value="a">a - дозаписать в файл</option>
+                <option value="w">w - очисить файл и записать в файл</option>
+            </select>
+        </p>
+
+        <input type="hidden" name="function" value="page">
+        <input type="hidden" name="page_id" value="3">
+
+        <p>
+            <input type="reset" name="Reset" value="Обновить">
+            <input type="submit" name="submit" value="Отправить">
+        </p>
+    </form>
+
+   <a href="../first/order.html" target="_self" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">Вернуться в начало</a><br>
+    <a href="../first/index.html" target="_self" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">Вернуться на главную</a>
+</body>
+
+</html>
