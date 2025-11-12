@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задача и паспорт</title>
+    <link rel="stylesheet" href="CSS/01.css">
+</head>
+
+<body>
+    <nav class="nav-container">
+        <ul class="nav-menu">
+            <li><a href="../first/index.html" target="_self"><b>Главная страница</b></a></li>
+            <li><a href="https://flowwow.com/blog/kak-ukhazhivat-za-kaktusom/" target="_blank"><b>Полезные советы</b></a></li>
+            <li><a href="../first/order.html" target="_self"><b>Оформить заказ</b></a></li>
+            <li><a href="../first/cactus.html" target="_self"><b>Уход за кактусом</b></a></li>
+            <li><a href="../first/assortment.html" target="_self"><b>Ассортимент</b></a></li>
+            <li><a href="../first/passport.html" target="_self" class="active"><b>Паспорт и задача</b></a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Кактусовые" target="_blank">
+                <img src="https://avatars.mds.yandex.net/i?id=517f351a8c74a73dfc6199c0896f6c6152ee88be-10129407-images-thumbs&n=13" height="15px" alt="Википедия">
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h4 id="head1">Содержание</h4>
+        <ul class="content-list">
+            <li><a href="#head1" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">01_GetElementById </a></li>
+            <li><a href="#head2" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">02_DOM_JS</a></li>
+            <li><a href="#head3" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">Алгоритмическая задача</a></li>
+        </ul>
+
+    
+        <h3>01_GetElementById</h3>
+        <p><img src="./screen.jpg" width="700px" alt="Скриншот"></p>
+
+        <h3 id="head2">02_DOM_JS</h3>
+        <div class="personal-info">
+            <p>Фамилия: <span id="secondname">Степанова</span></p>
+            <p>Имя: <span id="name">Ксения</span></p>
+            <p>Дата рождения: <span id="date">07.08.2006</span></p>
+            <p>
+                <span id="click" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">
+                    Изменить кириллицу на латиницу
+                </span>
+            </p>
+        </div>
+
+        <h3 id="head3">Алгоритмическая задача</h3>
+        ещественные числа: X, Y, Z. Определить, существует ли треугольник с такими длинами сторон и, если существует, будет ли он прямоугольным.</p>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Для поисковика:<input name="q" value="search"></li>
+            <li>Формулировка задачи 
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Даны вещественные числа: X, Y, Z. Определить, существует ли треугольник с такими длинами сторон и, если существует, будет ли он прямоугольным.</textarea></li>
+            <li>X: <input id="x" name="x" type="number" value="3"></li>
+            <li>Y: <input id="y" name="y" type="number" value="4"></li>
+            <li>Z: <input id="z" name="z" type="number" value="5"></li>
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен"></li>
+            <li>действие 1: <input id="verify" type="button" value="Проверить"></li>
+            <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+    </div>
+
+    <script src="./asd.js"></script>
+    <script src="./heh.js"></script>
+
+    <a href="../first/passport.html#head1" target="_self" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">Вернуться в начало</a><br>
+    <a href="../first/index.html" target="_self" style="cursor: pointer; color: #2e7d32; text-decoration: underline;">Вернуться на главную</a>
+
+</body>
+</html>
