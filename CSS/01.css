@@ -44,7 +44,7 @@ table {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Измените на stretch */
+    align-items: stretch; 
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -55,52 +55,31 @@ table {
     flex: 1;
     min-width: 120px;
     text-align: center;
-    display: flex; /* Добавьте это */
+    display: flex; 
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
     padding: 18px 15px;
-    display: flex; /* Измените на flex */
-    align-items: center; /* Добавьте это */
-    justify-content: center; /* Добавьте это */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     transition: all 0.3s ease;
     font-weight: 500;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
-    flex: 1; /* Добавьте это */
-}
+    flex: 1; 
 
 .nav-menu a.active {
     background: #ff9800;
     color: white;
     font-weight: 700;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Добавьте тень для глубины */
-}
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
 
 /* Уберите границу у последнего элемента */
 .nav-menu li:last-child a {
     border-right: none;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-    }
-    
-    .nav-menu li {
-        width: 100%;
-    }
-    
-    .nav-menu a {
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .nav-menu li:last-child a {
-        border-bottom: none;
-    }
-}
